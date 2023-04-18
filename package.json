@@ -9,7 +9,7 @@
     "ts-jest": "^29.1.0",
     "typescript": "~5.0.4"
   },
-  "main": "lib/index.js",
+  "main": "dist/lib/index.js",
   "name": "@inter-ikea-digital/awscore-cdk",
   "peerDependencies": {
     "aws-cdk-lib": "^2.75.0",
@@ -20,6 +20,6 @@
     "test": "jest",
     "watch": "tsc -w"
   },
-  "types": "lib/index.d.ts",
+  "types": "dist/lib/index.d.ts",
   "version": "0.1.0"
 }
