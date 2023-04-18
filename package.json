@@ -1,13 +1,4 @@
 {
-  "name": "aws_core-cdk",
-  "version": "0.1.0",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "test": "jest"
-  },
   "devDependencies": {
     "@types/jest": "^27.5.2",
     "@types/node": "10.17.27",
@@ -18,8 +9,17 @@
     "ts-jest": "^27.1.4",
     "typescript": "~3.9.7"
   },
+  "main": "lib/index.js",
+  "name": "aws_core-cdk",
   "peerDependencies": {
     "aws-cdk-lib": "2.45.0",
     "constructs": "^10.0.0"
-  }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "watch": "tsc -w"
+  },
+  "types": "lib/index.d.ts",
+  "version": "0.1.0"
 }
