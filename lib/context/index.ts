@@ -1,6 +1,4 @@
-import {
-  Stack,
-} from "aws-cdk-lib";
+import { Stack } from 'aws-cdk-lib';
 import { IConstruct } from 'constructs';
 
 import { EnvironmentAbbreviation } from '../constants';
@@ -14,7 +12,8 @@ import { EnvironmentAbbreviation } from '../constants';
  */
 export function getEnvironmentAbbreviation(construct: IConstruct): EnvironmentAbbreviation {
   const stack = Stack.of(construct);
-  const environmentAbbreviation: EnvironmentAbbreviation = stack.node.tryGetContext('environmentAbbreviation')!;
+  const environmentAbbreviation: EnvironmentAbbreviation =
+    stack.node.tryGetContext('environmentAbbreviation')!;
   if (environmentAbbreviation === undefined) {
     throw new Error('Environment abbreviation must be defined in the context');
   }
@@ -71,6 +70,10 @@ export function createResourceName(construct: IConstruct, name: string): string 
  * @param environmentAbbreviation The abbreviation of the environment where the resource will be deployed.
  * @returns A resource name formatted according to our naming convention.
  */
-export function formatResourceName(name: string, projectName: string, environmentAbbreviation: EnvironmentAbbreviation): string {
+export function formatResourceName(
+  name: string,
+  projectName: string,
+  environmentAbbreviation: EnvironmentAbbreviation
+): string {
   return `${projectName}-${name}-${environmentAbbreviation}`;
 }
