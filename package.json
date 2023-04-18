@@ -10,7 +10,7 @@
     "typescript": "~3.9.7"
   },
   "main": "lib/index.js",
-  "name": "aws_core-cdk",
+  "name": "@inter-ikea-digital/awscore-cdk",
   "peerDependencies": {
     "aws-cdk-lib": "2.45.0",
     "constructs": "^10.0.0"
