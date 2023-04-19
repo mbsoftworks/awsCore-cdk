@@ -20,6 +20,7 @@
     "constructs": "^10.2.0"
   },
   "prettier": "@inter-ikea-digital/awscore-prettier-config",
+  "repository": "git@github.com:Inter-IKEA-Digital/awsCore-cdk.git",
   "scripts": {
     "build": "tsc",
     "format": "prettier-eslint --write \"**/*.ts\" \"**/*.[cm]?js\" \"**/*.yml\" \"**/*.yaml\" \"**/*.md\"",
