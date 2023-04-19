@@ -13,6 +13,7 @@
     "ts-jest": "^29.1.0",
     "typescript": "~5.0.4"
   },
+  "license": "UNLICENSED",
   "main": "dist/lib/index.js",
   "name": "@inter-ikea-digital/awscore-cdk",
   "peerDependencies": {
